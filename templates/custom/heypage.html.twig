@@ -1,0 +1,12 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    {{ form_start(form, {
+        'attr': {
+            'novalidate': 'novalidate',
+            'class': 'form-signin'
+        }
+    }) }}
+    {{ form_widget(form) }}
+    {{ form_end(form) }}
+{% endblock %}
